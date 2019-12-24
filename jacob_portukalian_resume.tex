@@ -16,7 +16,6 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -69,7 +68,6 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
@@ -77,6 +75,10 @@
   \textbf{{\Large Jacob Portukalian}} & Email : \href{mailto:jportukalian@gmail.com}{jportukalian@gmail.com}\\
   Mobile : +1-626-679-5421 \\
 \end{tabular*}
+%-----------Objective-----------------
+\section{Objective}
+  Experienced RF system architect and manager, seeks challenging management position where skills in 
+  system architecture and management will be critical in quickly bringing a product to market.
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
@@ -99,9 +101,36 @@
 \section{Experience}
   \resumeSubHeadingListStart
     %==========================================================================================================
+    \resumeSubheading{Astra Space, Inc.}{Alameda, CA}{Radio Systems Manager}{May 2018-Present}
+    \resumeItemListStart
+      \resumeItem{Radio System Architect}
+      {Designed rocket radio system from clean slate.  Developed some novel architecture designs to support 
+      Astra's novel approach to a multi-stage rocket architecture.  Designed system with clean interfaces 
+      to other products, which allowed a completely independent development path with very minimal integration
+      headaches.}      
+      \resumeItem{Manager}
+      {Built cross-functional team of 3 people.  Conducted all interviews, including technical screens to build
+      out team.  So far with a team of 4 people, we have covered all RF / mixed signal circuit design, PCB
+      layout, bare metal C firmware, embedded Linux software, FPGA Verilog, Python for ground side software, 
+      all test software.}
+      \resumeItem{Radio Systems - Avionics}
+      {My team at Astra designed, built, and qualified the GPS and telemetry transmitters for the rocket.  My 
+      team also has the firmware and software engineers to do all of the embedded coding and test software.}
+      \resumeItem{Radio Systems - Ground Support Equipment}
+      {My team at Astra has deigned, built, and tested a portable tracking station for receiving telemetry from
+      the rocket.  It consists of a 2.4m dish on a forklift-able pedestal, and a weatherproof support cart with
+      telemetry receivers, telemetry servers, and other support equipment.  My team has designed and implemented
+      the software that closed loop controls the dish to point at the rocket during flight.}
+      \resumeItem{Verilog}
+      {Needed to develop a telemetry encoder, and the quickest path forward seemed to be to teach myself
+      Verilog.  In 2 months I learned Verilog and implemented a Reed-Solomon encoder from first principles.
+      Peformed all simulations.  Once in hardware, design matched simulation every time.  Design has proven
+      to be extremely stable.}
+    \resumeItemListEnd
+    %==========================================================================================================
     \resumeSubheading
       {Sky Wave Design, LLC}{Los Angeles, CA}
-      {Chief Engineer}{April 2014-Nov. 2015, June 2016-Present}
+      {Chief Engineer}{April 2014-Nov. 2015, June 2016-May 2018}
       \resumeItemListStart
       	\resumeItem{Consulting} 
 		  {Sky Wave Design is an embedded electronics development consulting business, 
@@ -151,7 +180,10 @@
       	\resumeItem{Lead RF Engineer} 
 			{As the lead RF engineer I was responsible for all RF development and performance.  Duties included
 			new radio designs, supporting off-the-shelf radio sourcing and integration, debugging, link budget
-			maintenance, and system design.}
+      maintenance, and system design.}
+    \resumeItem{Manager}
+    {Hired 2 RF engineers for team during my tenure.  Team remained productive and brought our designs to 
+    market after I left.}
 		\resumeItem{System Design}
 		    {Designed several systems, including bi-directional low power S-Band links, Space-to-Ground X-Band 
 		    telemetry at both low and high data rates, a complete SAR RF chain, including 800W power amplifier.}
@@ -178,7 +210,8 @@
 			development effort across many disciplines such as thermodynamics, structures, dynamics, and avionics 
 			integration.  Kept design focused on fundamental objective which was
 			to close communication links to ground, International Space Station, and TDRSS while also minimizing 
-			impact to mass budget.}
+      impact to mass budget.  Did not have any direct reports, but job required much technical leadership
+      and developing teamwork across teams.}
 		\resumeItem{RF Circuit Design}
 			{Designed many RF circuits from scratch.  Designed SDR transmitters and receivers, including
 			upconveter and downconverter chains and selecting appropriate DACs/ADCs.  Wrote Python scripts to
@@ -248,13 +281,11 @@
   \resumeSubHeadingListStart
     \resumeSubItem{Aviation}
       {Private pilot with over 130 hours of flight time.}
+    \resumeSubItem{Backcountry Skiing}{New favorite outdoor activity! - Avi L1 certified}
     \resumeSubItem{Backpacking}
       {Hiked the John Muir Trail, summer of 2017.  220 miles from Yosemite to Mt. Whitney.}
   \resumeSubHeadingListEnd
 
 %
-
-
-
 %-------------------------------------------
 \end{document}
