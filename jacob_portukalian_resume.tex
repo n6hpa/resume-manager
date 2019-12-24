@@ -1,0 +1,260 @@
+%-------------------------
+% Resume in Latex
+% Template Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Jacob Portukalian}} & Email : \href{mailto:jportukalian@gmail.com}{jportukalian@gmail.com}\\
+  Mobile : +1-626-679-5421 \\
+\end{tabular*}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California}{Los Angeles, CA}
+      {Bachelor of Science, Electrical Engineering}{June 2011}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Computer Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C, C++, Python, \LaTeX}
+    }
+    \item{
+    	\textbf{Design \& Simulation Tools}{: HFSS, ADS, AWR, Altium, Visio, Powerpoint}
+	}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    %==========================================================================================================
+    \resumeSubheading
+      {Sky Wave Design, LLC}{Los Angeles, CA}
+      {Chief Engineer}{April 2014-Nov. 2015, June 2016-Present}
+      \resumeItemListStart
+      	\resumeItem{Consulting} 
+		  {Sky Wave Design is an embedded electronics development consulting business, 
+		  focused primarily on embedded systems and Bluetooth Low Energy}
+        \resumeItem{Firmware}
+          {Expert level embedded firmware developer, especially with Bluetooth LE.  Many firmware projects 
+          completed, including systems with complex state-machine behavior that is completely reconfigurable using
+          configuration files.  All firmware developed in C for bare metal processors.}
+        \resumeItem{Circuit Design}
+          {Designed many circuits, from complex sensor data acquisition platforms using a Raspberry Pi, to tiny
+          BLE beacons designed to be embedded into a workplace environment for motion detection and reporting.
+          All circuits designed in Altium.}
+        \resumeItem{PCB Layout}
+          {Many layouts performed, both for circuits that we designed in-house, and also some layouts performed
+          on their own.  Most complex example was a three PCB stack, each PCB with up to 16 layers, including a 
+          switching power supply, FPGA board, and RF transmitter board.}
+        \resumeItem{Manufacturing}
+          {Most circuits we design get taken all the way through to low volume manufacturing in quantities of up
+          to 1000.  We design the production tooling to minimize production costs and time.  We have relationships
+          with local vendors to get PCBAs assembled right here in Southern California at affordable prices.  We have
+          also taken plastic parts and enclosures through the manufacturing process and had injection molds created.}
+        \resumeItem{Certification}
+          {Preparing for certification starts with the schematic design.  We have taken products all the way 
+          through the complex and painful process successfully.  We know how to ensure your project gets done
+          without surprises and setbacks.}
+        \resumeItem{Mechanical Design}
+          {We are able to design simple mechanical systems and electronics enclosures in 3D and then print
+          prototypes using our 3D printer.}
+      \resumeItemListEnd
+    %==========================================================================================================
+    \resumeSubheading
+      {FORM Lifting}{Los Angeles, CA}
+      {Co-founder / CTO}{June 2015-Nov. 2017}
+      \resumeItemListStart
+      	\resumeItem{Circuit Design} 
+			{Designed a sensor board for a weightlifting collar that included a 6-axis accelerometer and a
+			barometric altimeter.  Wrote firmware to stream data back to phone using Bluetooth Low Energy.}
+		\resumeItem{Manufacturing} 
+			{Produced 1,500 units.  Built and programmed a fixture for automated testing and flashing.
+			Had unit FCC/CE/IC/NZ/AUS certified.}
+      \resumeItemListEnd
+    %==========================================================================================================
+    \resumeSubheading
+      {Tyvak Nano-Satellites, Inc.}{Irvine, CA}
+      {Lead RF Engineer}{Nov. 2015-June 2017}
+      \resumeItemListStart
+      	\resumeItem{Lead RF Engineer} 
+			{As the lead RF engineer I was responsible for all RF development and performance.  Duties included
+			new radio designs, supporting off-the-shelf radio sourcing and integration, debugging, link budget
+			maintenance, and system design.}
+		\resumeItem{System Design}
+		    {Designed several systems, including bi-directional low power S-Band links, Space-to-Ground X-Band 
+		    telemetry at both low and high data rates, a complete SAR RF chain, including 800W power amplifier.}
+		\resumeItem{Transmitter Design}
+		    {Designed a complete X-Band transmitter.  Designed hairpin filters and directional couplers in AWR.
+		    Simulations matched passive circuit performance on the first try.  Designed low jitter 6 GHz PLL.
+		    Laid out all PCBs.  Developed the calibration and integration procedures and assembled and calibrated 
+		    flight units for four flight vehicles.  Developed PyQt GUI for controlling the radio to help automate
+		    bringup, test, and calibration.}
+		\resumeItem{Antenna Design}
+		    {Designed deployable 1m S-Band dish that stowed to a 10cm cube.  Designed several patch antennas.
+		    Designed helix antenna for UHF and also wrote Python code to take the pattern data and project it
+		    to the Earth's surface with an arbitrary rotation for ground coverage analysis.  
+		    All designs simulated in HFSS.}
+      \resumeItemListEnd
+    %==========================================================================================================
+    \resumeSubheading
+      {Space Exploration Technologies}{Hawthorne, CA}
+      {Lead RF Engineer}{Sep. 2011-March 2014}
+      \resumeItemListStart
+      	\resumeItem{Crew Dragon} 
+			{Responsible engineer for designing and implementing the Crew Dragon communication system.  This
+			was a clean-slate novel communication system design that met many demanding criteria.  Coordinated
+			development effort across many disciplines such as thermodynamics, structures, dynamics, and avionics 
+			integration.  Kept design focused on fundamental objective which was
+			to close communication links to ground, International Space Station, and TDRSS while also minimizing 
+			impact to mass budget.}
+		\resumeItem{RF Circuit Design}
+			{Designed many RF circuits from scratch.  Designed SDR transmitters and receivers, including
+			upconveter and downconverter chains and selecting appropriate DACs/ADCs.  Wrote Python scripts to
+			optimize frequency planning.  Designed several filters, both microstrip and lumped-element.  Designed
+			a high power PIN diode T/R switch.}
+		\resumeItem{PCB Layout}
+			{Over 10 PCB layouts for prototype and flight boards for transmitters and receivers.  Most layouts were
+			8-12 layers with FPGAs and RF circuits.  Every design was part of a multi-PCB stack and at a minimum
+			required compliance with MIL-STD-1540E as well as tough vibration, shock, and thermal environments.}
+		\resumeItem{Power Amplifiers}
+			{Designed several power amplifiers for UHF and S-Band using both LDMOS and GaN.  Simulated in
+			ADS.  Accurately predicted ACPR, mask compliance, and power consumption in ADS which matched 
+			measured results.  Achieved over 70\% saturated drain efficiency for S-Band GaN PA.  Designed a multi-PA
+			phased array driver with feedback control on both phase and amplitude.}
+		\resumeItem{Manufacturing}
+			{Designed a test rack for automated transmitter testing.  It was designed to accurately measure
+			output power from up to 6 transmitters simultaneously.  Included was a custom designed test set
+			and scalar network analyzer for characterizing loads and cables under power.  Wrote Python GUI for 
+			running test scripts.}
+      \resumeItemListEnd
+    %==========================================================================================================
+    \resumeSubheading
+      {Topanga Technologies}{Canoga Park, CA}
+      {Lead RF Engineer}{Feb. 2010-Sep. 2011}
+      \resumeItemListStart
+	    \resumeItem{Part Time}
+			{Majority of employment at Topanga was part-time (30 hours/week) while attending UCLA with a 
+			full-time academic load.}
+		\resumeItem{Firmware Development}
+			{Developed a unique state-machine approach to plasma lighting algorithms.  Designed a system where
+			the algorithm was specified in a text file loaded by the firmware.  This allowed any variant of 
+			either the lamp or the driver to all use the same version of the firmware.}
+		\resumeItem{Circuit Design}
+			{Designed a mixed-signal RF driver board that contained a microcontroller and RF source which 
+			excited and controlled a 170W UHF power amplifier.  Designed a 5W driver amplifier using LDMOS.}
+		\resumeItem{Desktop Software}
+			{Developed a suite of applications in C++/Qt for monitoring and controlling drivers, data acquisition,
+			database storage, automated inventory management, calibration, and characterization.  Also developed
+			software that automated PA characterization, so I was able to generate various sweeps of PA performance
+			automatically.}
+      \resumeItemListEnd
+    %==========================================================================================================
+    \resumeSubheading
+      {Floor 84 Studio}{North Hollywood, CA}
+      {Lead Game Engine Programmer}{Feb. 2008-Dec. 2009}
+      \resumeItemListStart
+      	\resumeItem{Game Engine} 
+			{Designed a 2D game engine for Nintendo DS in C++.  Developed library of 2D widgets such as buttons,
+			and other types of graphics.  Wrote all of my own design patterns from scratch.}
+		\resumeItem{iOS Apps}
+			{Developed several iOS games and apps, including one of the first every DJ mixing and scratching
+			sound apps with a sound mixing engine written in C++ (Objective-C was too slow).}
+      \resumeItemListEnd
+    %==========================================================================================================
+  \resumeSubHeadingListEnd
+%--------PROGRAMMING SKILLS------------
+\section{Patents}
+  \resumeSubHeadingListStart
+    \item{
+      {MULTIPLE PULSE WIDTH MODULATION WAVEFORMS FOR PLASMA LAMP \\
+      United States 8957593 \hfill Issued February 7, 2015}
+    }
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Extracurriculars}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Aviation}
+      {Private pilot with over 130 hours of flight time.}
+    \resumeSubItem{Backpacking}
+      {Hiked the John Muir Trail, summer of 2017.  220 miles from Yosemite to Mt. Whitney.}
+  \resumeSubHeadingListEnd
+
+%
+
+
+
+%-------------------------------------------
+\end{document}
